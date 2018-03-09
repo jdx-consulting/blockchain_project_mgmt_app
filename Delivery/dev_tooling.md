@@ -1,6 +1,6 @@
 # Development Ecosystem
 https://microsoft.github.io/techcasestudies/redback-devops.html
-[Example]("https://microsoft.github.io/techcasestudies/redback-devops.html")
+[Example](https://microsoft.github.io/techcasestudies/redback-devops.html)
 
 ## Collaboration
 [Slack]("https://slack.com/")
