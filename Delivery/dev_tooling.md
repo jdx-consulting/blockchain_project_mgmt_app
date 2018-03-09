@@ -1,5 +1,11 @@
 # Development Ecosystem
-[Example](https://microsoft.github.io/techcasestudies/redback-devops.html)
+
+## Example
+[Tech Case Study](https://microsoft.github.io/techcasestudies/redback-devops.html)
+
+## Overview
+![Slide 1](https://github.com/jdx-consulting/blockchain_project_mgmt_app/blob/master/Delivery/ContinuousDeliveryPipeline/Slide1.JPG)
+![Slide 2](https://github.com/jdx-consulting/blockchain_project_mgmt_app/blob/master/Delivery/ContinuousDeliveryPipeline/Slide2.JPG)
 
 ## Collaboration
 [Slack](https://slack.com/)
