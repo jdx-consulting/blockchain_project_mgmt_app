@@ -1,0 +1,362 @@
+{
+  "contractName": "ProjectManager",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "projects",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "userId",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6102d18061001e6000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde031461005c578063107046bd146100ea578063589759191461014d575b600080fd5b341561006757600080fd5b61006f6101a2565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100af578082015181840152602081019050610094565b50505050905090810190601f1680156100dc5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34156100f557600080fd5b61010b6004808035906020019091905050610240565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561015857600080fd5b61016061027f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102385780601f1061020d57610100808354040283529160200191610238565b820191906000526020600020905b81548152906001019060200180831161021b57829003601f168201915b505050505081565b60028181548110151561024f57fe5b90600052602060002090016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a7230582052e8126022c745cf96d7b1d9921d5ba8f7f2e2abbff9533ad27ab52d1e2e58960029",
+  "deployedBytecode": "0x606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde031461005c578063107046bd146100ea578063589759191461014d575b600080fd5b341561006757600080fd5b61006f6101a2565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100af578082015181840152602081019050610094565b50505050905090810190601f1680156100dc5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34156100f557600080fd5b61010b6004808035906020019091905050610240565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561015857600080fd5b61016061027f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102385780601f1061020d57610100808354040283529160200191610238565b820191906000526020600020905b81548152906001019060200180831161021b57829003601f168201915b505050505081565b60028181548110151561024f57fe5b90600052602060002090016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a7230582052e8126022c745cf96d7b1d9921d5ba8f7f2e2abbff9533ad27ab52d1e2e58960029",
+  "sourceMap": "51:106:2:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "51:106:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;78:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;126:25:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;102:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;78:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;126:25::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;102:21::-;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.17;\n\nimport \"./Project.sol\";\n\ncontract ProjectManager {\n\tstring public name;\n    address public userId;\n\tProject[] public projects;\n\n\t\n}",
+  "sourcePath": "/home/matthew/Development/blockchain_project_mgmt_app/App/contracts/PM/ProjectManager.sol",
+  "ast": {
+    "absolutePath": "/home/matthew/Development/blockchain_project_mgmt_app/App/contracts/PM/ProjectManager.sol",
+    "exportedSymbols": {
+      "ProjectManager": [
+        131
+      ]
+    },
+    "id": 132,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 122,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "/home/matthew/Development/blockchain_project_mgmt_app/App/contracts/PM/Project.sol",
+        "file": "./Project.sol",
+        "id": 123,
+        "nodeType": "ImportDirective",
+        "scope": 132,
+        "sourceUnit": 60,
+        "src": "26:23:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 131,
+        "linearizedBaseContracts": [
+          131
+        ],
+        "name": "ProjectManager",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 125,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 131,
+            "src": "78:18:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string storage ref"
+            },
+            "typeName": {
+              "id": 124,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "78:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string storage pointer"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 127,
+            "name": "userId",
+            "nodeType": "VariableDeclaration",
+            "scope": 131,
+            "src": "102:21:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 126,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "102:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 130,
+            "name": "projects",
+            "nodeType": "VariableDeclaration",
+            "scope": 131,
+            "src": "126:25:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_contract$_Project_$59_$dyn_storage",
+              "typeString": "contract Project[] storage ref"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 128,
+                "name": "Project",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 59,
+                "src": "126:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_Project_$59",
+                  "typeString": "contract Project"
+                }
+              },
+              "id": 129,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "126:9:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_contract$_Project_$59_$dyn_storage_ptr",
+                "typeString": "contract Project[] storage pointer"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 132,
+        "src": "51:106:2"
+      }
+    ],
+    "src": "0:157:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/matthew/Development/blockchain_project_mgmt_app/App/contracts/PM/ProjectManager.sol",
+    "exportedSymbols": {
+      "ProjectManager": [
+        131
+      ]
+    },
+    "id": 132,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 122,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "/home/matthew/Development/blockchain_project_mgmt_app/App/contracts/PM/Project.sol",
+        "file": "./Project.sol",
+        "id": 123,
+        "nodeType": "ImportDirective",
+        "scope": 132,
+        "sourceUnit": 60,
+        "src": "26:23:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 131,
+        "linearizedBaseContracts": [
+          131
+        ],
+        "name": "ProjectManager",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 125,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 131,
+            "src": "78:18:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string storage ref"
+            },
+            "typeName": {
+              "id": 124,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "78:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string storage pointer"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 127,
+            "name": "userId",
+            "nodeType": "VariableDeclaration",
+            "scope": 131,
+            "src": "102:21:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 126,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "102:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 130,
+            "name": "projects",
+            "nodeType": "VariableDeclaration",
+            "scope": 131,
+            "src": "126:25:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_contract$_Project_$59_$dyn_storage",
+              "typeString": "contract Project[] storage ref"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 128,
+                "name": "Project",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 59,
+                "src": "126:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_Project_$59",
+                  "typeString": "contract Project"
+                }
+              },
+              "id": 129,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "126:9:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_contract$_Project_$59_$dyn_storage_ptr",
+                "typeString": "contract Project[] storage pointer"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 132,
+        "src": "51:106:2"
+      }
+    ],
+    "src": "0:157:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {
+    "1520871291761": {
+      "events": {},
+      "links": {},
+      "address": "0x4276b9c4db391992a7924f2a96961436311bb064",
+      "transactionHash": "0xaff5445680d73859a76f2e0e704c9dc347682779549e4a87ea8bc3335328652f"
+    },
+    "1520872753531": {
+      "events": {},
+      "links": {},
+      "address": "0xf86990d9cd824ab8fbf15d12e9a6af70d66201d1",
+      "transactionHash": "0xa603c7fd87a7499085e930e95f6be4ff1394d935ece775284d20989f7735ebef"
+    }
+  },
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-03-12T17:33:01.081Z"
+}
