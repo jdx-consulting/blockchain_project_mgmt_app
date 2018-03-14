@@ -44,43 +44,66 @@
       "type": "function"
     },
     {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
       "constant": true,
-      "inputs": [
-        {
-          "name": "other",
-          "type": "address"
-        }
-      ],
-      "name": "isLaterDate",
+      "inputs": [],
+      "name": "contractVersion",
       "outputs": [
         {
           "name": "",
-          "type": "bool"
+          "type": "bytes32"
         }
       ],
       "payable": false,
       "stateMutability": "view",
       "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "year",
+          "type": "uint256"
+        },
+        {
+          "name": "month",
+          "type": "uint256"
+        },
+        {
+          "name": "day",
+          "type": "uint256"
+        }
+      ],
+      "name": "setDate",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b6105ed8061001e6000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630d869fe7146100675780632ef82a4a14610090578063a5ea08a2146100e1578063c533a09c1461010a575b600080fd5b341561007257600080fd5b61007a610133565b6040518082815260200191505060405180910390f35b341561009b57600080fd5b6100c7600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610139565b604051808215151515815260200191505060405180910390f35b34156100ec57600080fd5b6100f46105b5565b6040518082815260200191505060405180910390f35b341561011557600080fd5b61011d6105bb565b6040518082815260200191505060405180910390f35b60025481565b60003073ffffffffffffffffffffffffffffffffffffffff16630d869fe76000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156101a757600080fd5b6102c65a03f115156101b857600080fd5b505050604051805190508273ffffffffffffffffffffffffffffffffffffffff16630d869fe76000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b151561022e57600080fd5b6102c65a03f1151561023f57600080fd5b50505060405180519050111561025857600190506105b0565b3073ffffffffffffffffffffffffffffffffffffffff16630d869fe76000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156102c457600080fd5b6102c65a03f115156102d557600080fd5b505050604051805190508273ffffffffffffffffffffffffffffffffffffffff16630d869fe76000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b151561034b57600080fd5b6102c65a03f1151561035c57600080fd5b50505060405180519050101561037557600090506105b0565b3073ffffffffffffffffffffffffffffffffffffffff1663a5ea08a26000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156103e157600080fd5b6102c65a03f115156103f257600080fd5b505050604051805190508273ffffffffffffffffffffffffffffffffffffffff1663a5ea08a26000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b151561046857600080fd5b6102c65a03f1151561047957600080fd5b50505060405180519050111561049257600190506105b0565b3073ffffffffffffffffffffffffffffffffffffffff1663a5ea08a26000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156104fe57600080fd5b6102c65a03f1151561050f57600080fd5b505050604051805190508273ffffffffffffffffffffffffffffffffffffffff1663a5ea08a26000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b151561058557600080fd5b6102c65a03f1151561059657600080fd5b5050506040518051905010156105af57600090506105b0565b5b919050565b60015481565b600054815600a165627a7a723058207826d97cfc531182baa10c3ca0646368b7d7f236087eb9b38b514589af7f55a00029",
-  "deployedBytecode": "0x606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630d869fe7146100675780632ef82a4a14610090578063a5ea08a2146100e1578063c533a09c1461010a575b600080fd5b341561007257600080fd5b61007a610133565b6040518082815260200191505060405180910390f35b341561009b57600080fd5b6100c7600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610139565b604051808215151515815260200191505060405180910390f35b34156100ec57600080fd5b6100f46105b5565b6040518082815260200191505060405180910390f35b341561011557600080fd5b61011d6105bb565b6040518082815260200191505060405180910390f35b60025481565b60003073ffffffffffffffffffffffffffffffffffffffff16630d869fe76000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156101a757600080fd5b6102c65a03f115156101b857600080fd5b505050604051805190508273ffffffffffffffffffffffffffffffffffffffff16630d869fe76000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b151561022e57600080fd5b6102c65a03f1151561023f57600080fd5b50505060405180519050111561025857600190506105b0565b3073ffffffffffffffffffffffffffffffffffffffff16630d869fe76000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156102c457600080fd5b6102c65a03f115156102d557600080fd5b505050604051805190508273ffffffffffffffffffffffffffffffffffffffff16630d869fe76000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b151561034b57600080fd5b6102c65a03f1151561035c57600080fd5b50505060405180519050101561037557600090506105b0565b3073ffffffffffffffffffffffffffffffffffffffff1663a5ea08a26000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156103e157600080fd5b6102c65a03f115156103f257600080fd5b505050604051805190508273ffffffffffffffffffffffffffffffffffffffff1663a5ea08a26000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b151561046857600080fd5b6102c65a03f1151561047957600080fd5b50505060405180519050111561049257600190506105b0565b3073ffffffffffffffffffffffffffffffffffffffff1663a5ea08a26000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156104fe57600080fd5b6102c65a03f1151561050f57600080fd5b505050604051805190508273ffffffffffffffffffffffffffffffffffffffff1663a5ea08a26000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b151561058557600080fd5b6102c65a03f1151561059657600080fd5b5050506040518051905010156105af57600090506105b0565b5b919050565b60015481565b600054815600a165627a7a723058207826d97cfc531182baa10c3ca0646368b7d7f236087eb9b38b514589af7f55a00029",
-  "sourceMap": "26:470:1:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "26:470:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;97:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;125:368;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;74:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;53:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;97:16;;;;:::o;125:368::-;185:4;219;:9;;;:11;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;204:5;:10;;;:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:26;200:288;;;252:4;245:11;;;;200:288;291:4;:9;;;:11;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;276:5;:10;;;:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:26;272:216;;;324:5;317:12;;;;272:216;365:4;:10;;;:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;349:5;:11;;;:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:28;345:143;;;399:4;392:11;;;;345:143;439:4;:10;;;:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;423:5;:11;;;:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:28;419:69;;;473:5;466:12;;;;419:69;125:368;;;;:::o;74:17::-;;;;:::o;53:15::-;;;;:::o",
-  "source": "pragma solidity ^0.4.17;\n\ncontract ProjectDate {\n    uint public Day;\n    uint public Month;\n    uint public Year;\n\n    \n\n   function isLaterDate(ProjectDate other) public view returns(bool) {\n       if (other.Year() > this.Year()) {\n           return true;\n       } else if (other.Year() < this.Year()) {\n           return false;\n       } else if (other.Month() > this.Month()) {\n           return true;\n       } else if (other.Month() < this.Month()) {\n           return false;\n       }\n   } \n}",
+  "bytecode": "0x60606040527f312e302e30000000000000000000000000000000000000000000000000000000600090600019169055341561003957600080fd5b7f312e302e31000000000000000000000000000000000000000000000000000000600081600019169055506101b4806100736000396000f30060606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630d869fe71461007257806328760e601461009b578063a0a8e460146100d0578063a5ea08a214610101578063c533a09c1461012a575b600080fd5b341561007d57600080fd5b610085610153565b6040518082815260200191505060405180910390f35b34156100a657600080fd5b6100ce6004808035906020019091908035906020019091908035906020019091905050610159565b005b34156100db57600080fd5b6100e3610173565b60405180826000191660001916815260200191505060405180910390f35b341561010c57600080fd5b61011461017c565b6040518082815260200191505060405180910390f35b341561013557600080fd5b61013d610182565b6040518082815260200191505060405180910390f35b60035481565b806001819055508160028190555082600381905550505050565b60008054905090565b60025481565b600154815600a165627a7a723058202d2b06edf1f844580d81a8677b2603e8ce3ba46ddba62001749b1c4f6e5a1b050029",
+  "deployedBytecode": "0x60606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630d869fe71461007257806328760e601461009b578063a0a8e460146100d0578063a5ea08a214610101578063c533a09c1461012a575b600080fd5b341561007d57600080fd5b610085610153565b6040518082815260200191505060405180910390f35b34156100a657600080fd5b6100ce6004808035906020019091908035906020019091908035906020019091905050610159565b005b34156100db57600080fd5b6100e3610173565b60405180826000191660001916815260200191505060405180910390f35b341561010c57600080fd5b61011461017c565b6040518082815260200191505060405180910390f35b341561013557600080fd5b61013d610182565b6040518082815260200191505060405180910390f35b60035481565b806001819055508160028190555082600381905550505050565b60008054905090565b60025481565b600154815600a165627a7a723058202d2b06edf1f844580d81a8677b2603e8ce3ba46ddba62001749b1c4f6e5a1b050029",
+  "sourceMap": "86:430:3:-;;;94:34:0;;;;;;;;210:64:3;;;;;;;;250:17;:7;:17;;;;;;;86:430;;;;;;",
+  "deployedSourceMap": "86:430:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;187:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;377:127;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;280:88;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;164:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;143:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;187:16;;;;:::o;377:127::-;450:3;444;:9;;;;471:5;463;:13;;;;493:4;486;:11;;;;377:127;;;:::o;280:88::-;328:7;354;;347:14;;280:88;:::o;164:17::-;;;;:::o;143:15::-;;;;:::o",
+  "source": "pragma solidity ^0.4.17;\n\nimport \"../ContractBase.sol\";\nimport \"./IProjectDate.sol\";\n\ncontract ProjectDate is ContractBase, IProjectDate {\n    uint public Day;\n    uint public Month;\n    uint public Year;\n\n    function ProjectDate() public {\n        VERSION = \"1.0.1\";\n    }\n\n    function contractVersion() public view returns (bytes32) {\n        return VERSION;\n    }\n   \n    function setDate(uint year, uint month, uint day) public {\n        Day = day;\n        Month = month;\n        Year = year;\n    }\n    \n    \n}",
   "sourcePath": "/home/matthew/Development/blockchain_project_mgmt_app/App/contracts/PM/ProjectDate.sol",
   "ast": {
     "absolutePath": "/home/matthew/Development/blockchain_project_mgmt_app/App/contracts/PM/ProjectDate.sol",
     "exportedSymbols": {
       "ProjectDate": [
-        112
+        86
       ]
     },
-    "id": 113,
+    "id": 87,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 53,
+        "id": 35,
         "literals": [
           "solidity",
           "^",
@@ -88,28 +111,94 @@
           ".17"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:3"
       },
       {
-        "baseContracts": [],
-        "contractDependencies": [],
+        "absolutePath": "/home/matthew/Development/blockchain_project_mgmt_app/App/contracts/ContractBase.sol",
+        "file": "../ContractBase.sol",
+        "id": 36,
+        "nodeType": "ImportDirective",
+        "scope": 87,
+        "sourceUnit": 14,
+        "src": "26:29:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/matthew/Development/blockchain_project_mgmt_app/App/contracts/PM/IProjectDate.sol",
+        "file": "./IProjectDate.sol",
+        "id": 37,
+        "nodeType": "ImportDirective",
+        "scope": 87,
+        "sourceUnit": 34,
+        "src": "56:28:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": [],
+            "baseName": {
+              "contractScope": null,
+              "id": 38,
+              "name": "ContractBase",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 13,
+              "src": "110:12:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ContractBase_$13",
+                "typeString": "contract ContractBase"
+              }
+            },
+            "id": 39,
+            "nodeType": "InheritanceSpecifier",
+            "src": "110:12:3"
+          },
+          {
+            "arguments": [],
+            "baseName": {
+              "contractScope": null,
+              "id": 40,
+              "name": "IProjectDate",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 33,
+              "src": "124:12:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IProjectDate_$33",
+                "typeString": "contract IProjectDate"
+              }
+            },
+            "id": 41,
+            "nodeType": "InheritanceSpecifier",
+            "src": "124:12:3"
+          }
+        ],
+        "contractDependencies": [
+          13,
+          21,
+          33
+        ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 112,
+        "id": 86,
         "linearizedBaseContracts": [
-          112
+          86,
+          33,
+          13,
+          21
         ],
         "name": "ProjectDate",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 55,
+            "id": 43,
             "name": "Day",
             "nodeType": "VariableDeclaration",
-            "scope": 112,
-            "src": "53:15:1",
+            "scope": 86,
+            "src": "143:15:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -117,10 +206,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 54,
+              "id": 42,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "53:4:1",
+              "src": "143:4:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -131,11 +220,11 @@
           },
           {
             "constant": false,
-            "id": 57,
+            "id": 45,
             "name": "Month",
             "nodeType": "VariableDeclaration",
-            "scope": 112,
-            "src": "74:17:1",
+            "scope": 86,
+            "src": "164:17:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -143,10 +232,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 56,
+              "id": 44,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "74:4:1",
+              "src": "164:4:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -157,11 +246,11 @@
           },
           {
             "constant": false,
-            "id": 59,
+            "id": 47,
             "name": "Year",
             "nodeType": "VariableDeclaration",
-            "scope": 112,
-            "src": "97:16:1",
+            "scope": 86,
+            "src": "187:16:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -169,10 +258,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 58,
+              "id": 46,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "97:4:1",
+              "src": "187:4:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -183,702 +272,439 @@
           },
           {
             "body": {
-              "id": 110,
+              "id": 54,
               "nodeType": "Block",
-              "src": "191:302:1",
+              "src": "240:34:3",
               "statements": [
                 {
-                  "condition": {
+                  "expression": {
                     "argumentTypes": null,
-                    "commonType": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    },
-                    "id": 72,
+                    "id": 52,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
-                    "leftExpression": {
+                    "leftHandSide": {
                       "argumentTypes": null,
-                      "arguments": [],
-                      "expression": {
-                        "argumentTypes": [],
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 66,
-                          "name": "other",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 61,
-                          "src": "204:5:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ProjectDate_$112",
-                            "typeString": "contract ProjectDate"
-                          }
-                        },
-                        "id": 67,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "Year",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 59,
-                        "src": "204:10:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                          "typeString": "function () view external returns (uint256)"
-                        }
-                      },
-                      "id": 68,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "kind": "functionCall",
-                      "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "204:12:1",
+                      "id": 50,
+                      "name": "VERSION",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7,
+                      "src": "250:7:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
                       }
                     },
-                    "nodeType": "BinaryOperation",
-                    "operator": ">",
-                    "rightExpression": {
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
                       "argumentTypes": null,
-                      "arguments": [],
-                      "expression": {
-                        "argumentTypes": [],
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 69,
-                          "name": "this",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 135,
-                          "src": "219:4:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ProjectDate_$112",
-                            "typeString": "contract ProjectDate"
-                          }
-                        },
-                        "id": 70,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "Year",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 59,
-                        "src": "219:9:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                          "typeString": "function () view external returns (uint256)"
-                        }
-                      },
-                      "id": 71,
+                      "hexValue": "312e302e31",
+                      "id": 51,
                       "isConstant": false,
                       "isLValue": false,
-                      "isPure": false,
-                      "kind": "functionCall",
+                      "isPure": true,
+                      "kind": "string",
                       "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "219:11:1",
+                      "nodeType": "Literal",
+                      "src": "260:7:3",
+                      "subdenomination": null,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
+                        "typeIdentifier": "t_stringliteral_fc7f6d936935ae6385924f29da7af79e941070dafe46831a51595892abc1b97a",
+                        "typeString": "literal_string \"1.0.1\""
+                      },
+                      "value": "1.0.1"
                     },
-                    "src": "204:26:1",
+                    "src": "250:17:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
                     }
                   },
-                  "falseBody": {
-                    "condition": {
-                      "argumentTypes": null,
-                      "commonType": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      },
-                      "id": 82,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "leftExpression": {
-                        "argumentTypes": null,
-                        "arguments": [],
-                        "expression": {
-                          "argumentTypes": [],
-                          "expression": {
-                            "argumentTypes": null,
-                            "id": 76,
-                            "name": "other",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 61,
-                            "src": "276:5:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_ProjectDate_$112",
-                              "typeString": "contract ProjectDate"
-                            }
-                          },
-                          "id": 77,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "Year",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": 59,
-                          "src": "276:10:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                            "typeString": "function () view external returns (uint256)"
-                          }
-                        },
-                        "id": 78,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "kind": "functionCall",
-                        "lValueRequested": false,
-                        "names": [],
-                        "nodeType": "FunctionCall",
-                        "src": "276:12:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      },
-                      "nodeType": "BinaryOperation",
-                      "operator": "<",
-                      "rightExpression": {
-                        "argumentTypes": null,
-                        "arguments": [],
-                        "expression": {
-                          "argumentTypes": [],
-                          "expression": {
-                            "argumentTypes": null,
-                            "id": 79,
-                            "name": "this",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 135,
-                            "src": "291:4:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_ProjectDate_$112",
-                              "typeString": "contract ProjectDate"
-                            }
-                          },
-                          "id": 80,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "Year",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": 59,
-                          "src": "291:9:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                            "typeString": "function () view external returns (uint256)"
-                          }
-                        },
-                        "id": 81,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "kind": "functionCall",
-                        "lValueRequested": false,
-                        "names": [],
-                        "nodeType": "FunctionCall",
-                        "src": "291:11:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      },
-                      "src": "276:26:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      }
-                    },
-                    "falseBody": {
-                      "condition": {
-                        "argumentTypes": null,
-                        "commonType": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        },
-                        "id": 92,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "leftExpression": {
-                          "argumentTypes": null,
-                          "arguments": [],
-                          "expression": {
-                            "argumentTypes": [],
-                            "expression": {
-                              "argumentTypes": null,
-                              "id": 86,
-                              "name": "other",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 61,
-                              "src": "349:5:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ProjectDate_$112",
-                                "typeString": "contract ProjectDate"
-                              }
-                            },
-                            "id": 87,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "lValueRequested": false,
-                            "memberName": "Month",
-                            "nodeType": "MemberAccess",
-                            "referencedDeclaration": 57,
-                            "src": "349:11:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                              "typeString": "function () view external returns (uint256)"
-                            }
-                          },
-                          "id": 88,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "kind": "functionCall",
-                          "lValueRequested": false,
-                          "names": [],
-                          "nodeType": "FunctionCall",
-                          "src": "349:13:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        "nodeType": "BinaryOperation",
-                        "operator": ">",
-                        "rightExpression": {
-                          "argumentTypes": null,
-                          "arguments": [],
-                          "expression": {
-                            "argumentTypes": [],
-                            "expression": {
-                              "argumentTypes": null,
-                              "id": 89,
-                              "name": "this",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 135,
-                              "src": "365:4:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ProjectDate_$112",
-                                "typeString": "contract ProjectDate"
-                              }
-                            },
-                            "id": 90,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "lValueRequested": false,
-                            "memberName": "Month",
-                            "nodeType": "MemberAccess",
-                            "referencedDeclaration": 57,
-                            "src": "365:10:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                              "typeString": "function () view external returns (uint256)"
-                            }
-                          },
-                          "id": 91,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "kind": "functionCall",
-                          "lValueRequested": false,
-                          "names": [],
-                          "nodeType": "FunctionCall",
-                          "src": "365:12:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        "src": "349:28:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_bool",
-                          "typeString": "bool"
-                        }
-                      },
-                      "falseBody": {
-                        "condition": {
-                          "argumentTypes": null,
-                          "commonType": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          },
-                          "id": 102,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "leftExpression": {
-                            "argumentTypes": null,
-                            "arguments": [],
-                            "expression": {
-                              "argumentTypes": [],
-                              "expression": {
-                                "argumentTypes": null,
-                                "id": 96,
-                                "name": "other",
-                                "nodeType": "Identifier",
-                                "overloadedDeclarations": [],
-                                "referencedDeclaration": 61,
-                                "src": "423:5:1",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_ProjectDate_$112",
-                                  "typeString": "contract ProjectDate"
-                                }
-                              },
-                              "id": 97,
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "memberName": "Month",
-                              "nodeType": "MemberAccess",
-                              "referencedDeclaration": 57,
-                              "src": "423:11:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                                "typeString": "function () view external returns (uint256)"
-                              }
-                            },
-                            "id": 98,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "kind": "functionCall",
-                            "lValueRequested": false,
-                            "names": [],
-                            "nodeType": "FunctionCall",
-                            "src": "423:13:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_uint256",
-                              "typeString": "uint256"
-                            }
-                          },
-                          "nodeType": "BinaryOperation",
-                          "operator": "<",
-                          "rightExpression": {
-                            "argumentTypes": null,
-                            "arguments": [],
-                            "expression": {
-                              "argumentTypes": [],
-                              "expression": {
-                                "argumentTypes": null,
-                                "id": 99,
-                                "name": "this",
-                                "nodeType": "Identifier",
-                                "overloadedDeclarations": [],
-                                "referencedDeclaration": 135,
-                                "src": "439:4:1",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_ProjectDate_$112",
-                                  "typeString": "contract ProjectDate"
-                                }
-                              },
-                              "id": 100,
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "memberName": "Month",
-                              "nodeType": "MemberAccess",
-                              "referencedDeclaration": 57,
-                              "src": "439:10:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                                "typeString": "function () view external returns (uint256)"
-                              }
-                            },
-                            "id": 101,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "kind": "functionCall",
-                            "lValueRequested": false,
-                            "names": [],
-                            "nodeType": "FunctionCall",
-                            "src": "439:12:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_uint256",
-                              "typeString": "uint256"
-                            }
-                          },
-                          "src": "423:28:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_bool",
-                            "typeString": "bool"
-                          }
-                        },
-                        "falseBody": null,
-                        "id": 106,
-                        "nodeType": "IfStatement",
-                        "src": "419:69:1",
-                        "trueBody": {
-                          "id": 105,
-                          "nodeType": "Block",
-                          "src": "453:35:1",
-                          "statements": [
-                            {
-                              "expression": {
-                                "argumentTypes": null,
-                                "hexValue": "66616c7365",
-                                "id": 103,
-                                "isConstant": false,
-                                "isLValue": false,
-                                "isPure": true,
-                                "kind": "bool",
-                                "lValueRequested": false,
-                                "nodeType": "Literal",
-                                "src": "473:5:1",
-                                "subdenomination": null,
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_bool",
-                                  "typeString": "bool"
-                                },
-                                "value": "false"
-                              },
-                              "functionReturnParameters": 65,
-                              "id": 104,
-                              "nodeType": "Return",
-                              "src": "466:12:1"
-                            }
-                          ]
-                        }
-                      },
-                      "id": 107,
-                      "nodeType": "IfStatement",
-                      "src": "345:143:1",
-                      "trueBody": {
-                        "id": 95,
-                        "nodeType": "Block",
-                        "src": "379:34:1",
-                        "statements": [
-                          {
-                            "expression": {
-                              "argumentTypes": null,
-                              "hexValue": "74727565",
-                              "id": 93,
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "kind": "bool",
-                              "lValueRequested": false,
-                              "nodeType": "Literal",
-                              "src": "399:4:1",
-                              "subdenomination": null,
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_bool",
-                                "typeString": "bool"
-                              },
-                              "value": "true"
-                            },
-                            "functionReturnParameters": 65,
-                            "id": 94,
-                            "nodeType": "Return",
-                            "src": "392:11:1"
-                          }
-                        ]
-                      }
-                    },
-                    "id": 108,
-                    "nodeType": "IfStatement",
-                    "src": "272:216:1",
-                    "trueBody": {
-                      "id": 85,
-                      "nodeType": "Block",
-                      "src": "304:35:1",
-                      "statements": [
-                        {
-                          "expression": {
-                            "argumentTypes": null,
-                            "hexValue": "66616c7365",
-                            "id": 83,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": true,
-                            "kind": "bool",
-                            "lValueRequested": false,
-                            "nodeType": "Literal",
-                            "src": "324:5:1",
-                            "subdenomination": null,
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_bool",
-                              "typeString": "bool"
-                            },
-                            "value": "false"
-                          },
-                          "functionReturnParameters": 65,
-                          "id": 84,
-                          "nodeType": "Return",
-                          "src": "317:12:1"
-                        }
-                      ]
-                    }
-                  },
-                  "id": 109,
-                  "nodeType": "IfStatement",
-                  "src": "200:288:1",
-                  "trueBody": {
-                    "id": 75,
-                    "nodeType": "Block",
-                    "src": "232:34:1",
-                    "statements": [
-                      {
-                        "expression": {
-                          "argumentTypes": null,
-                          "hexValue": "74727565",
-                          "id": 73,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": true,
-                          "kind": "bool",
-                          "lValueRequested": false,
-                          "nodeType": "Literal",
-                          "src": "252:4:1",
-                          "subdenomination": null,
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_bool",
-                            "typeString": "bool"
-                          },
-                          "value": "true"
-                        },
-                        "functionReturnParameters": 65,
-                        "id": 74,
-                        "nodeType": "Return",
-                        "src": "245:11:1"
-                      }
-                    ]
-                  }
+                  "id": 53,
+                  "nodeType": "ExpressionStatement",
+                  "src": "250:17:3"
                 }
               ]
             },
-            "id": 111,
+            "id": 55,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "ProjectDate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 48,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "230:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 49,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "240:0:3"
+            },
+            "scope": 86,
+            "src": "210:64:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 62,
+              "nodeType": "Block",
+              "src": "337:31:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 60,
+                    "name": "VERSION",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 7,
+                    "src": "354:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 59,
+                  "id": 61,
+                  "nodeType": "Return",
+                  "src": "347:14:3"
+                }
+              ]
+            },
+            "id": 63,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
             "modifiers": [],
-            "name": "isLaterDate",
+            "name": "contractVersion",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 62,
+              "id": 56,
               "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 61,
-                  "name": "other",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 111,
-                  "src": "146:17:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ProjectDate_$112",
-                    "typeString": "contract ProjectDate"
-                  },
-                  "typeName": {
-                    "contractScope": null,
-                    "id": 60,
-                    "name": "ProjectDate",
-                    "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 112,
-                    "src": "146:11:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ProjectDate_$112",
-                      "typeString": "contract ProjectDate"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "145:19:1"
+              "parameters": [],
+              "src": "304:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 65,
+              "id": 59,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 64,
+                  "id": 58,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 111,
-                  "src": "185:4:1",
+                  "scope": 63,
+                  "src": "328:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_bool",
-                    "typeString": "bool"
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 63,
-                    "name": "bool",
+                    "id": 57,
+                    "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "185:4:1",
+                    "src": "328:7:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "184:6:1"
+              "src": "327:9:3"
             },
-            "scope": 112,
-            "src": "125:368:1",
+            "scope": 86,
+            "src": "280:88:3",
             "stateMutability": "view",
-            "superFunction": null,
+            "superFunction": 12,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 84,
+              "nodeType": "Block",
+              "src": "434:70:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 74,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 72,
+                      "name": "Day",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 43,
+                      "src": "444:3:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 73,
+                      "name": "day",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 69,
+                      "src": "450:3:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "444:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 75,
+                  "nodeType": "ExpressionStatement",
+                  "src": "444:9:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 78,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 76,
+                      "name": "Month",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45,
+                      "src": "463:5:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 77,
+                      "name": "month",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 67,
+                      "src": "471:5:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "463:13:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 79,
+                  "nodeType": "ExpressionStatement",
+                  "src": "463:13:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 82,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 80,
+                      "name": "Year",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 47,
+                      "src": "486:4:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 81,
+                      "name": "year",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 65,
+                      "src": "493:4:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "486:11:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 83,
+                  "nodeType": "ExpressionStatement",
+                  "src": "486:11:3"
+                }
+              ]
+            },
+            "id": 85,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "setDate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 70,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 65,
+                  "name": "year",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "394:9:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 64,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "394:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 67,
+                  "name": "month",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "405:10:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 66,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "405:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 69,
+                  "name": "day",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "417:8:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 68,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "417:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "393:33:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 71,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "434:0:3"
+            },
+            "scope": 86,
+            "src": "377:127:3",
+            "stateMutability": "nonpayable",
+            "superFunction": 32,
             "visibility": "public"
           }
         ],
-        "scope": 113,
-        "src": "26:470:1"
+        "scope": 87,
+        "src": "86:430:3"
       }
     ],
-    "src": "0:496:1"
+    "src": "0:516:3"
   },
   "legacyAST": {
     "absolutePath": "/home/matthew/Development/blockchain_project_mgmt_app/App/contracts/PM/ProjectDate.sol",
     "exportedSymbols": {
       "ProjectDate": [
-        112
+        86
       ]
     },
-    "id": 113,
+    "id": 87,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 53,
+        "id": 35,
         "literals": [
           "solidity",
           "^",
@@ -886,28 +712,94 @@
           ".17"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:3"
       },
       {
-        "baseContracts": [],
-        "contractDependencies": [],
+        "absolutePath": "/home/matthew/Development/blockchain_project_mgmt_app/App/contracts/ContractBase.sol",
+        "file": "../ContractBase.sol",
+        "id": 36,
+        "nodeType": "ImportDirective",
+        "scope": 87,
+        "sourceUnit": 14,
+        "src": "26:29:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/matthew/Development/blockchain_project_mgmt_app/App/contracts/PM/IProjectDate.sol",
+        "file": "./IProjectDate.sol",
+        "id": 37,
+        "nodeType": "ImportDirective",
+        "scope": 87,
+        "sourceUnit": 34,
+        "src": "56:28:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": [],
+            "baseName": {
+              "contractScope": null,
+              "id": 38,
+              "name": "ContractBase",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 13,
+              "src": "110:12:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ContractBase_$13",
+                "typeString": "contract ContractBase"
+              }
+            },
+            "id": 39,
+            "nodeType": "InheritanceSpecifier",
+            "src": "110:12:3"
+          },
+          {
+            "arguments": [],
+            "baseName": {
+              "contractScope": null,
+              "id": 40,
+              "name": "IProjectDate",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 33,
+              "src": "124:12:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IProjectDate_$33",
+                "typeString": "contract IProjectDate"
+              }
+            },
+            "id": 41,
+            "nodeType": "InheritanceSpecifier",
+            "src": "124:12:3"
+          }
+        ],
+        "contractDependencies": [
+          13,
+          21,
+          33
+        ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 112,
+        "id": 86,
         "linearizedBaseContracts": [
-          112
+          86,
+          33,
+          13,
+          21
         ],
         "name": "ProjectDate",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 55,
+            "id": 43,
             "name": "Day",
             "nodeType": "VariableDeclaration",
-            "scope": 112,
-            "src": "53:15:1",
+            "scope": 86,
+            "src": "143:15:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -915,10 +807,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 54,
+              "id": 42,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "53:4:1",
+              "src": "143:4:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -929,11 +821,11 @@
           },
           {
             "constant": false,
-            "id": 57,
+            "id": 45,
             "name": "Month",
             "nodeType": "VariableDeclaration",
-            "scope": 112,
-            "src": "74:17:1",
+            "scope": 86,
+            "src": "164:17:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -941,10 +833,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 56,
+              "id": 44,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "74:4:1",
+              "src": "164:4:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -955,11 +847,11 @@
           },
           {
             "constant": false,
-            "id": 59,
+            "id": 47,
             "name": "Year",
             "nodeType": "VariableDeclaration",
-            "scope": 112,
-            "src": "97:16:1",
+            "scope": 86,
+            "src": "187:16:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -967,10 +859,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 58,
+              "id": 46,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "97:4:1",
+              "src": "187:4:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -981,689 +873,426 @@
           },
           {
             "body": {
-              "id": 110,
+              "id": 54,
               "nodeType": "Block",
-              "src": "191:302:1",
+              "src": "240:34:3",
               "statements": [
                 {
-                  "condition": {
+                  "expression": {
                     "argumentTypes": null,
-                    "commonType": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    },
-                    "id": 72,
+                    "id": 52,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
-                    "leftExpression": {
+                    "leftHandSide": {
                       "argumentTypes": null,
-                      "arguments": [],
-                      "expression": {
-                        "argumentTypes": [],
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 66,
-                          "name": "other",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 61,
-                          "src": "204:5:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ProjectDate_$112",
-                            "typeString": "contract ProjectDate"
-                          }
-                        },
-                        "id": 67,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "Year",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 59,
-                        "src": "204:10:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                          "typeString": "function () view external returns (uint256)"
-                        }
-                      },
-                      "id": 68,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "kind": "functionCall",
-                      "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "204:12:1",
+                      "id": 50,
+                      "name": "VERSION",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7,
+                      "src": "250:7:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
                       }
                     },
-                    "nodeType": "BinaryOperation",
-                    "operator": ">",
-                    "rightExpression": {
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
                       "argumentTypes": null,
-                      "arguments": [],
-                      "expression": {
-                        "argumentTypes": [],
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 69,
-                          "name": "this",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 135,
-                          "src": "219:4:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ProjectDate_$112",
-                            "typeString": "contract ProjectDate"
-                          }
-                        },
-                        "id": 70,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "Year",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 59,
-                        "src": "219:9:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                          "typeString": "function () view external returns (uint256)"
-                        }
-                      },
-                      "id": 71,
+                      "hexValue": "312e302e31",
+                      "id": 51,
                       "isConstant": false,
                       "isLValue": false,
-                      "isPure": false,
-                      "kind": "functionCall",
+                      "isPure": true,
+                      "kind": "string",
                       "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "219:11:1",
+                      "nodeType": "Literal",
+                      "src": "260:7:3",
+                      "subdenomination": null,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
+                        "typeIdentifier": "t_stringliteral_fc7f6d936935ae6385924f29da7af79e941070dafe46831a51595892abc1b97a",
+                        "typeString": "literal_string \"1.0.1\""
+                      },
+                      "value": "1.0.1"
                     },
-                    "src": "204:26:1",
+                    "src": "250:17:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
                     }
                   },
-                  "falseBody": {
-                    "condition": {
-                      "argumentTypes": null,
-                      "commonType": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      },
-                      "id": 82,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "leftExpression": {
-                        "argumentTypes": null,
-                        "arguments": [],
-                        "expression": {
-                          "argumentTypes": [],
-                          "expression": {
-                            "argumentTypes": null,
-                            "id": 76,
-                            "name": "other",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 61,
-                            "src": "276:5:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_ProjectDate_$112",
-                              "typeString": "contract ProjectDate"
-                            }
-                          },
-                          "id": 77,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "Year",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": 59,
-                          "src": "276:10:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                            "typeString": "function () view external returns (uint256)"
-                          }
-                        },
-                        "id": 78,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "kind": "functionCall",
-                        "lValueRequested": false,
-                        "names": [],
-                        "nodeType": "FunctionCall",
-                        "src": "276:12:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      },
-                      "nodeType": "BinaryOperation",
-                      "operator": "<",
-                      "rightExpression": {
-                        "argumentTypes": null,
-                        "arguments": [],
-                        "expression": {
-                          "argumentTypes": [],
-                          "expression": {
-                            "argumentTypes": null,
-                            "id": 79,
-                            "name": "this",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 135,
-                            "src": "291:4:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_ProjectDate_$112",
-                              "typeString": "contract ProjectDate"
-                            }
-                          },
-                          "id": 80,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "Year",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": 59,
-                          "src": "291:9:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                            "typeString": "function () view external returns (uint256)"
-                          }
-                        },
-                        "id": 81,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "kind": "functionCall",
-                        "lValueRequested": false,
-                        "names": [],
-                        "nodeType": "FunctionCall",
-                        "src": "291:11:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      },
-                      "src": "276:26:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      }
-                    },
-                    "falseBody": {
-                      "condition": {
-                        "argumentTypes": null,
-                        "commonType": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        },
-                        "id": 92,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "leftExpression": {
-                          "argumentTypes": null,
-                          "arguments": [],
-                          "expression": {
-                            "argumentTypes": [],
-                            "expression": {
-                              "argumentTypes": null,
-                              "id": 86,
-                              "name": "other",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 61,
-                              "src": "349:5:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ProjectDate_$112",
-                                "typeString": "contract ProjectDate"
-                              }
-                            },
-                            "id": 87,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "lValueRequested": false,
-                            "memberName": "Month",
-                            "nodeType": "MemberAccess",
-                            "referencedDeclaration": 57,
-                            "src": "349:11:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                              "typeString": "function () view external returns (uint256)"
-                            }
-                          },
-                          "id": 88,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "kind": "functionCall",
-                          "lValueRequested": false,
-                          "names": [],
-                          "nodeType": "FunctionCall",
-                          "src": "349:13:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        "nodeType": "BinaryOperation",
-                        "operator": ">",
-                        "rightExpression": {
-                          "argumentTypes": null,
-                          "arguments": [],
-                          "expression": {
-                            "argumentTypes": [],
-                            "expression": {
-                              "argumentTypes": null,
-                              "id": 89,
-                              "name": "this",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 135,
-                              "src": "365:4:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ProjectDate_$112",
-                                "typeString": "contract ProjectDate"
-                              }
-                            },
-                            "id": 90,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "lValueRequested": false,
-                            "memberName": "Month",
-                            "nodeType": "MemberAccess",
-                            "referencedDeclaration": 57,
-                            "src": "365:10:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                              "typeString": "function () view external returns (uint256)"
-                            }
-                          },
-                          "id": 91,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "kind": "functionCall",
-                          "lValueRequested": false,
-                          "names": [],
-                          "nodeType": "FunctionCall",
-                          "src": "365:12:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        "src": "349:28:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_bool",
-                          "typeString": "bool"
-                        }
-                      },
-                      "falseBody": {
-                        "condition": {
-                          "argumentTypes": null,
-                          "commonType": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          },
-                          "id": 102,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "leftExpression": {
-                            "argumentTypes": null,
-                            "arguments": [],
-                            "expression": {
-                              "argumentTypes": [],
-                              "expression": {
-                                "argumentTypes": null,
-                                "id": 96,
-                                "name": "other",
-                                "nodeType": "Identifier",
-                                "overloadedDeclarations": [],
-                                "referencedDeclaration": 61,
-                                "src": "423:5:1",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_ProjectDate_$112",
-                                  "typeString": "contract ProjectDate"
-                                }
-                              },
-                              "id": 97,
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "memberName": "Month",
-                              "nodeType": "MemberAccess",
-                              "referencedDeclaration": 57,
-                              "src": "423:11:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                                "typeString": "function () view external returns (uint256)"
-                              }
-                            },
-                            "id": 98,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "kind": "functionCall",
-                            "lValueRequested": false,
-                            "names": [],
-                            "nodeType": "FunctionCall",
-                            "src": "423:13:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_uint256",
-                              "typeString": "uint256"
-                            }
-                          },
-                          "nodeType": "BinaryOperation",
-                          "operator": "<",
-                          "rightExpression": {
-                            "argumentTypes": null,
-                            "arguments": [],
-                            "expression": {
-                              "argumentTypes": [],
-                              "expression": {
-                                "argumentTypes": null,
-                                "id": 99,
-                                "name": "this",
-                                "nodeType": "Identifier",
-                                "overloadedDeclarations": [],
-                                "referencedDeclaration": 135,
-                                "src": "439:4:1",
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_ProjectDate_$112",
-                                  "typeString": "contract ProjectDate"
-                                }
-                              },
-                              "id": 100,
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": false,
-                              "lValueRequested": false,
-                              "memberName": "Month",
-                              "nodeType": "MemberAccess",
-                              "referencedDeclaration": 57,
-                              "src": "439:10:1",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
-                                "typeString": "function () view external returns (uint256)"
-                              }
-                            },
-                            "id": 101,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": false,
-                            "kind": "functionCall",
-                            "lValueRequested": false,
-                            "names": [],
-                            "nodeType": "FunctionCall",
-                            "src": "439:12:1",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_uint256",
-                              "typeString": "uint256"
-                            }
-                          },
-                          "src": "423:28:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_bool",
-                            "typeString": "bool"
-                          }
-                        },
-                        "falseBody": null,
-                        "id": 106,
-                        "nodeType": "IfStatement",
-                        "src": "419:69:1",
-                        "trueBody": {
-                          "id": 105,
-                          "nodeType": "Block",
-                          "src": "453:35:1",
-                          "statements": [
-                            {
-                              "expression": {
-                                "argumentTypes": null,
-                                "hexValue": "66616c7365",
-                                "id": 103,
-                                "isConstant": false,
-                                "isLValue": false,
-                                "isPure": true,
-                                "kind": "bool",
-                                "lValueRequested": false,
-                                "nodeType": "Literal",
-                                "src": "473:5:1",
-                                "subdenomination": null,
-                                "typeDescriptions": {
-                                  "typeIdentifier": "t_bool",
-                                  "typeString": "bool"
-                                },
-                                "value": "false"
-                              },
-                              "functionReturnParameters": 65,
-                              "id": 104,
-                              "nodeType": "Return",
-                              "src": "466:12:1"
-                            }
-                          ]
-                        }
-                      },
-                      "id": 107,
-                      "nodeType": "IfStatement",
-                      "src": "345:143:1",
-                      "trueBody": {
-                        "id": 95,
-                        "nodeType": "Block",
-                        "src": "379:34:1",
-                        "statements": [
-                          {
-                            "expression": {
-                              "argumentTypes": null,
-                              "hexValue": "74727565",
-                              "id": 93,
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "kind": "bool",
-                              "lValueRequested": false,
-                              "nodeType": "Literal",
-                              "src": "399:4:1",
-                              "subdenomination": null,
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_bool",
-                                "typeString": "bool"
-                              },
-                              "value": "true"
-                            },
-                            "functionReturnParameters": 65,
-                            "id": 94,
-                            "nodeType": "Return",
-                            "src": "392:11:1"
-                          }
-                        ]
-                      }
-                    },
-                    "id": 108,
-                    "nodeType": "IfStatement",
-                    "src": "272:216:1",
-                    "trueBody": {
-                      "id": 85,
-                      "nodeType": "Block",
-                      "src": "304:35:1",
-                      "statements": [
-                        {
-                          "expression": {
-                            "argumentTypes": null,
-                            "hexValue": "66616c7365",
-                            "id": 83,
-                            "isConstant": false,
-                            "isLValue": false,
-                            "isPure": true,
-                            "kind": "bool",
-                            "lValueRequested": false,
-                            "nodeType": "Literal",
-                            "src": "324:5:1",
-                            "subdenomination": null,
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_bool",
-                              "typeString": "bool"
-                            },
-                            "value": "false"
-                          },
-                          "functionReturnParameters": 65,
-                          "id": 84,
-                          "nodeType": "Return",
-                          "src": "317:12:1"
-                        }
-                      ]
-                    }
-                  },
-                  "id": 109,
-                  "nodeType": "IfStatement",
-                  "src": "200:288:1",
-                  "trueBody": {
-                    "id": 75,
-                    "nodeType": "Block",
-                    "src": "232:34:1",
-                    "statements": [
-                      {
-                        "expression": {
-                          "argumentTypes": null,
-                          "hexValue": "74727565",
-                          "id": 73,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": true,
-                          "kind": "bool",
-                          "lValueRequested": false,
-                          "nodeType": "Literal",
-                          "src": "252:4:1",
-                          "subdenomination": null,
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_bool",
-                            "typeString": "bool"
-                          },
-                          "value": "true"
-                        },
-                        "functionReturnParameters": 65,
-                        "id": 74,
-                        "nodeType": "Return",
-                        "src": "245:11:1"
-                      }
-                    ]
-                  }
+                  "id": 53,
+                  "nodeType": "ExpressionStatement",
+                  "src": "250:17:3"
                 }
               ]
             },
-            "id": 111,
+            "id": 55,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "ProjectDate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 48,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "230:2:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 49,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "240:0:3"
+            },
+            "scope": 86,
+            "src": "210:64:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 62,
+              "nodeType": "Block",
+              "src": "337:31:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 60,
+                    "name": "VERSION",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 7,
+                    "src": "354:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 59,
+                  "id": 61,
+                  "nodeType": "Return",
+                  "src": "347:14:3"
+                }
+              ]
+            },
+            "id": 63,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
             "modifiers": [],
-            "name": "isLaterDate",
+            "name": "contractVersion",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 62,
+              "id": 56,
               "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 61,
-                  "name": "other",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 111,
-                  "src": "146:17:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ProjectDate_$112",
-                    "typeString": "contract ProjectDate"
-                  },
-                  "typeName": {
-                    "contractScope": null,
-                    "id": 60,
-                    "name": "ProjectDate",
-                    "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 112,
-                    "src": "146:11:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ProjectDate_$112",
-                      "typeString": "contract ProjectDate"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "145:19:1"
+              "parameters": [],
+              "src": "304:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 65,
+              "id": 59,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 64,
+                  "id": 58,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 111,
-                  "src": "185:4:1",
+                  "scope": 63,
+                  "src": "328:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_bool",
-                    "typeString": "bool"
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 63,
-                    "name": "bool",
+                    "id": 57,
+                    "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "185:4:1",
+                    "src": "328:7:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "184:6:1"
+              "src": "327:9:3"
             },
-            "scope": 112,
-            "src": "125:368:1",
+            "scope": 86,
+            "src": "280:88:3",
             "stateMutability": "view",
-            "superFunction": null,
+            "superFunction": 12,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 84,
+              "nodeType": "Block",
+              "src": "434:70:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 74,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 72,
+                      "name": "Day",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 43,
+                      "src": "444:3:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 73,
+                      "name": "day",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 69,
+                      "src": "450:3:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "444:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 75,
+                  "nodeType": "ExpressionStatement",
+                  "src": "444:9:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 78,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 76,
+                      "name": "Month",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45,
+                      "src": "463:5:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 77,
+                      "name": "month",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 67,
+                      "src": "471:5:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "463:13:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 79,
+                  "nodeType": "ExpressionStatement",
+                  "src": "463:13:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 82,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 80,
+                      "name": "Year",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 47,
+                      "src": "486:4:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 81,
+                      "name": "year",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 65,
+                      "src": "493:4:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "486:11:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 83,
+                  "nodeType": "ExpressionStatement",
+                  "src": "486:11:3"
+                }
+              ]
+            },
+            "id": 85,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "setDate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 70,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 65,
+                  "name": "year",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "394:9:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 64,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "394:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 67,
+                  "name": "month",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "405:10:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 66,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "405:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 69,
+                  "name": "day",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "417:8:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 68,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "417:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "393:33:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 71,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "434:0:3"
+            },
+            "scope": 86,
+            "src": "377:127:3",
+            "stateMutability": "nonpayable",
+            "superFunction": 32,
             "visibility": "public"
           }
         ],
-        "scope": 113,
-        "src": "26:470:1"
+        "scope": 87,
+        "src": "86:430:3"
       }
     ],
-    "src": "0:496:1"
+    "src": "0:516:3"
   },
   "compiler": {
     "name": "solc",
@@ -1684,5 +1313,5 @@
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-03-12T17:35:05.031Z"
+  "updatedAt": "2018-03-13T14:36:06.124Z"
 }
