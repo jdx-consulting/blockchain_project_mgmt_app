@@ -6,7 +6,7 @@ import "./ProjectData.sol";
 
 contract Project is ContractBase {
     
-    function Project(bytes32 _version, address _contractManagerAddress) public ContractBase(_version, _contractManagerAddress) { }
+    function Project(bytes32 _version, address _contractManagerAddress) public ContractBase(_version, "Project", _contractManagerAddress) { }
 
     function joinTeam(address teamMember) public {
         ProjectData pdata = ProjectData(contractManager.findDeployedContract("ProjectData"));

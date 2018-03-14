@@ -7,7 +7,6 @@ import "../../contracts/PM/Project.sol";
 contract TestProject {
   Project p = Project(DeployedAddresses.Project());
  
-
   function testCanJoinTeam() public {
     p.joinTeam(address(this));
     Assert.equal(p.inTeam(address(this)), true, "Added to Team.");
