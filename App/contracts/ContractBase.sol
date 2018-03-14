@@ -9,5 +9,7 @@ contract ContractBase is IContract {
         VERSION = _version;
     }
 
-    function contractVersion() public view returns (bytes32);
+    function contractVersion() public view returns (bytes32) {
+        return VERSION;
+    }
 }

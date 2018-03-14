@@ -10,13 +10,11 @@ contract TestProject {
 
   function testCanJoinTeam() public {
     p.joinTeam(address(this));
-
     Assert.equal(p.inTeam(address(this)), true, "Added to Team.");
   }
 
   function testCanLeaveTeam() public {
     p.leaveTeam(address(this));
-
     Assert.equal(p.inTeam(address(this)), false, "Removed from Team.");
   }
 

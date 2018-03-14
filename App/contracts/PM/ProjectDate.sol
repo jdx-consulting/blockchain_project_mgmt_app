@@ -9,11 +9,7 @@ contract ProjectDate is ContractBase, IProjectDate {
     uint setYear;
 
     function ProjectDate(bytes32 _version) public ContractBase(_version) {}
-
-    function contractVersion() public view returns (bytes32) {
-        return VERSION;
-    }
-
+   
     function year() public view returns(uint) {
         return setYear;
     }
