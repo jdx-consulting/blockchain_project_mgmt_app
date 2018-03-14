@@ -4,13 +4,19 @@ import "./IProjectDate.sol";
 import "./ProjectDate.sol";
 
 contract ProjectDateProxy is IProjectDate {
-    IProjectDate pd;
+    address pdAddr;
 
-    function setTargetAddress(address targetContract) public {
-        pd = ProjectDate(targetContract);
+    function ProjectDateProxy(address _pdAddress) public {
+        pdAddr = _pdAddress;
+    }
+
+    function Year() public view returns(uint) {
+        ProjectDate pd = ProjectDate(pdAddr);
+        return pd.Year();
     }
 
     function setDate(uint year, uint month, uint day) public {
+        ProjectDate pd = ProjectDate(pdAddr);
         pd.setDate(year, month, day);
     }
 }
