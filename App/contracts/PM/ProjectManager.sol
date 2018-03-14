@@ -6,6 +6,4 @@ contract ProjectManager {
 	string public name;
     address public userId;
 	Project[] public projects;
-
-	
 }

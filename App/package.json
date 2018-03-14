@@ -1,0 +1,22 @@
+{
+  "name": "blockchain_pm_app",
+  "version": "1.0.0",
+  "description": "Blockchain POC - Project and Absence Management",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test --network development_cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdx-consulting/blockchain_project_mgt_app.git"
+  },
+  "author": "JDX FinTech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdx-consulting/blockchain_project_mgt_app/issues"
+  },
+  "homepage": "https://github.com/jdx-consulting/blockchain_project_mgt_app#readme"
+}
