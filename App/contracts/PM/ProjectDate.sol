@@ -4,9 +4,9 @@ import "../ContractBase.sol";
 import "./IProjectDate.sol";
 
 contract ProjectDate is ContractBase, IProjectDate {
-    uint public Day;
-    uint public Month;
-    uint public Year;
+    uint setDay;
+    uint setMonth;
+    uint setYear;
 
     function ProjectDate() public {
         VERSION = "1.0.1";
@@ -15,11 +15,23 @@ contract ProjectDate is ContractBase, IProjectDate {
     function contractVersion() public view returns (bytes32) {
         return VERSION;
     }
+
+    function year() public view returns(uint) {
+        return setYear;
+    }
+
+     function month() public view returns(uint) {
+        return setMonth;
+    }
+
+     function day() public view returns(uint) {
+        return setDay;
+    }
    
-    function setDate(uint year, uint month, uint day) public {
-        Day = day;
-        Month = month;
-        Year = year;
+    function setDate(uint _year, uint _month, uint _day) public {
+        setDay = _day;
+        setMonth = _month;
+        setYear = _year;
     }
     
     

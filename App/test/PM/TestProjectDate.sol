@@ -16,21 +16,21 @@ contract TestProjectDate {
     function testSetYear() public {
         ProjectDateProxy pdx = ProjectDateProxy(DeployedAddresses.ProjectDateProxy());
         pdx.setDate(2018,3,10);
-        Assert.equal(pdx.Year(), 2018, "Year set correctly.");
+        Assert.equal(pdx.year(), 2018, "Year set correctly.");
     }
 
 
     function testSetMonth() public {
-        ProjectDate pd1 = ProjectDate(DeployedAddresses.ProjectDate());
-        pd1.setDate(2018,3,10);
-        Assert.equal(pd1.Month(), 3, "Year set correctly.");
+        ProjectDateProxy pdx = ProjectDateProxy(DeployedAddresses.ProjectDateProxy());
+        pdx.setDate(2018,3,10);
+        Assert.equal(pdx.month(), 3, "Month set correctly.");
     }
 
     
     function testSetDay() public {
-        ProjectDate pd1 = ProjectDate(DeployedAddresses.ProjectDate());
-        pd1.setDate(2018,3,10);
-        Assert.equal(pd1.Day(), 10, "Year set correctly.");
+        ProjectDateProxy pdx = ProjectDateProxy(DeployedAddresses.ProjectDateProxy());
+        pdx.setDate(2018,3,10);
+        Assert.equal(pdx.day(), 10, "Day set correctly.");
     }
 
 }

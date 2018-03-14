@@ -10,13 +10,23 @@ contract ProjectDateProxy is IProjectDate {
         pdAddr = _pdAddress;
     }
 
-    function Year() public view returns(uint) {
+    function year() public view returns(uint) {
         ProjectDate pd = ProjectDate(pdAddr);
-        return pd.Year();
+        return pd.year();
     }
 
-    function setDate(uint year, uint month, uint day) public {
+     function month() public view returns(uint) {
         ProjectDate pd = ProjectDate(pdAddr);
-        pd.setDate(year, month, day);
+        return pd.month();
+    }
+
+     function day() public view returns(uint) {
+        ProjectDate pd = ProjectDate(pdAddr);
+        return pd.day();
+    }
+
+    function setDate(uint _year, uint _month, uint _day) public {
+        ProjectDate pd = ProjectDate(pdAddr);
+        pd.setDate(_year, _month, _day);
     }
 }
