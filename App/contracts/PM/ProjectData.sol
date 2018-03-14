@@ -5,7 +5,7 @@ import "../ContractBase.sol";
 contract ProjectData is ContractBase {
     mapping (address => bool) private projectTeam;
 
-    function ProjectData(bytes32 _version) public ContractBase(_version) {}
+    function ProjectData(bytes32 _version, address _contractManagerAddress) public ContractBase(_version, _contractManagerAddress) {}
 
     function joinTeam(address teamMember) public {
         projectTeam[teamMember] = true;
