@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'cd ./App; npm install -g truffle; truffle compile;'
+        sh 'cd ./App; truffle compile;'
       }
     }
   }
