@@ -34,7 +34,8 @@ contract TestProjectDate {
     }
 
     function testAutoBuild() public {
-        Assert.equal(1,1,"Dummy Test");
+        int dummyVal = 1;
+        Assert.equal(1, dummyVal, "Dummy Test.");
     }
 
 }
