@@ -33,4 +33,8 @@ contract TestProjectDate {
         Assert.equal(pdx.day(), 10, "Day set correctly.");
     }
 
+    function testAutoBuild() public {
+        Assert.equal(1,1,"Dummy Test");
+    }
+
 }
