@@ -10,6 +10,7 @@ contract Project is ContractBase {
 
     function joinTeam(address teamMember) public {
         ProjectData pdata = ProjectData(contractManager.findDeployedContract("ProjectData"));
+        require(pdata.whoIsPM() != address(0)); // Can't assign team members to project with no PM.
         pdata.joinTeam(teamMember);
     }
 
@@ -23,5 +24,21 @@ contract Project is ContractBase {
         pdata.leaveTeam(teamMember);
     }
 
-    
+    function assignPM(address pm) public {
+        require(pm != address(0));
+        ProjectData pdata = ProjectData(contractManager.findDeployedContract("ProjectData"));
+        pdata.assignPM(pm);
+        assert(pdata.whoIsPM() == pm);
+    }
+
+    function unassignPM() public {
+        ProjectData pdata = ProjectData(contractManager.findDeployedContract("ProjectData"));
+        require(pdata.whoIsPM() != address(0));
+        pdata.unassignPM();
+    }
+
+    function whoIsPM() public view returns (address) {
+        ProjectData pdata = ProjectData(contractManager.findDeployedContract("ProjectData"));
+        return pdata.whoIsPM();
+    }
 }

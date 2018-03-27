@@ -4,6 +4,7 @@ import "../ContractBase.sol";
 
 contract ProjectData is ContractBase {
     mapping (address => bool) private projectTeam;
+    address private projectManager;
 
     function ProjectData(bytes32 _version, address _contractManagerAddress) public ContractBase(_version, "ProjectData", _contractManagerAddress) {}
 
@@ -17,5 +18,17 @@ contract ProjectData is ContractBase {
 
     function leaveTeam(address teamMember) public {
         projectTeam[teamMember] = false;
+    }
+
+    function assignPM(address pm) public {
+        projectManager = pm;
+    }
+
+    function unassignPM() public {
+        projectManager = address(0);
+    }
+
+    function whoIsPM() public view returns (address) {
+        return projectManager;
     }
 }
