@@ -94,6 +94,50 @@ To install truffle:
 sudo apt install npm
 sudo npm install -g truffle
 ```
+
+# [Docker](https://www.docker.com/)
+
+First dependency is [Docker](https://www.docker.com/); [TeamCity Server](https://hub.docker.com/r/jetbrains/teamcity-server/), [TeamCity BuildAgent](https://hub.docker.com/r/jetbrains/teamcity-agent/) and the [Ethereum Test Blockchain (Ganache-cli)](https://github.com/trufflesuite/ganache-cli) all run as Docker Containers.
+
+## [Ubuntu Docker Install](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository)
+
+### Install
+ ```
+sudo apt-get update
+```
+
+```
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+```
+
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+
+```
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+```
+
+```
+sudo apt-get update
+```
+
+```
+sudo apt-get install docker-ce
+```
+
+### Test 
+```
+sudo docker run hello-world
+```
+
 # Ganache CLI
 [GancheCLI](https://github.com/trufflesuite/ganache-cli) is a fast Ethereum RPC client for testing and development. It can also be run as a Docker container which really simplifies getting going...
 ```
