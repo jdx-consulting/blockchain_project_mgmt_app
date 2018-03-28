@@ -1,3 +1,4 @@
 App/build
 App/bin
+App/node_modules/
 .vscode
