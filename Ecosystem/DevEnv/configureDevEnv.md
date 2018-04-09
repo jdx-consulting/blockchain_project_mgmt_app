@@ -20,6 +20,24 @@ sudo apt update
 sudo apt upgrade
 ```
 
+### (Set up NTP Time-Sync)[https://www.digitalocean.com/community/tutorials/how-to-set-up-time-synchronization-on-ubuntu-16-04]
+#### Install / Configure
+```
+timedatectl list-timezones
+```
+```
+sudo timedatectl set-timezone Europe/London
+```
+```
+sudo timedatectl set-ntp no
+sudo apt-get install ntp
+sudo ntpq -p
+```
+#### Validate
+```
+timedatectl
+date
+```
 # VS Code
 This is not mandatory, any text editor can be used to code up Ethereum (Solidity) contracts, but VS code has some useful plug-ins for Solidity development.
 
