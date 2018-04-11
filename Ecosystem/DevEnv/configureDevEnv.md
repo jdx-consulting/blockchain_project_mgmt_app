@@ -20,6 +20,24 @@ sudo apt update
 sudo apt upgrade
 ```
 
+### [Set up NTP Time-Sync](https://www.digitalocean.com/community/tutorials/how-to-set-up-time-synchronization-on-ubuntu-16-04)
+#### Install / Configure
+```
+timedatectl list-timezones
+```
+```
+sudo timedatectl set-timezone Europe/London
+```
+```
+sudo timedatectl set-ntp no
+sudo apt-get install ntp
+sudo ntpq -p
+```
+#### Validate
+```
+timedatectl
+date
+```
 # VS Code
 This is not mandatory, any text editor can be used to code up Ethereum (Solidity) contracts, but VS code has some useful plug-ins for Solidity development.
 
@@ -192,7 +210,7 @@ ip addr show
 
 ## To connect to another enode:
 Put to a new (or existing) file in ~/.ethereum/geth/static-nodes.json the enode and ip addresses of another node, using the same format (without changing the port).
-`["enode://b29dec5241d77b0bf9380555f3ada31d7efde2f66f9f5b06bbbf3baa29c816f228593991140902a299574110d90a96c55de380120c890c0611ad385a051c1a9e@192.168.3.150:30303"]`
+`["enode://b29dec5241d77b0bf9380555f3ada31d7efde2f66f9f5b06bbbf3baa29c816f228593991140902a299574110d90a96c55de380120c890c0611ad385a051c1a9e@[IP]:30303"]`
 
 ## To use Mist (it will automatically connect to the private chain):
 `geth --mine --networkid 27 --rpc --rpccorsdomain "*" --maxpeers 6 --nodiscover`
