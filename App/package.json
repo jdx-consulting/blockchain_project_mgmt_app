@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "start": "webpack-dev-server --mode development ./web/src/js/index.js --output ./web/build/main.js --open",
     "test": "truffle test --network development_cli",
     "dev": "webpack --mode development ./web/src/js/index.js --output ./web/build/main.js",
     "build": "webpack --mode production ./web/src/js/index.js --output ./web/build/main.js"
@@ -35,6 +36,7 @@
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "web3": "^1.0.0-beta.33",
-    "webpack": "^4.5.0"
+    "webpack": "^4.5.0",
+    "webpack-dev-server": "^3.1.3"
   }
 }
