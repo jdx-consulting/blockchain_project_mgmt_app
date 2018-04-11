@@ -1,4 +1,5 @@
 App/build
 App/bin
 App/node_modules/
+App/web/build
 .vscode
