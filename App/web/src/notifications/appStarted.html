@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <body>
+        <a id="theLink"></a> 
+        
+    </body>
+    <script>
+        function onNotificationMessage(obj){
+            _data = obj;
+            console.log("onNotificationMessage");
+                        
+            document.getElementById('theLink').innerHTML = obj.lab;
+            
+            document.getElementById('theLink').addEventListener('click', function(e){
+                fin.desktop.System.openUrlWithBrowser(_data.link, function () {
+                    console.log("successful");
+                },function (err) {
+                    console.log("failure: " + err);
+                });
+            })
+        }
+
+    </script>
+ </html>
