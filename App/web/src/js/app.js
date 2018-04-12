@@ -1,11 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom";
-const App = () => {
-    return (
-        <div>
-            <p>Timesheets</p>
-        </div>
-    );
-};
-export default App;
-ReactDOM.render(<App />, document.getElementById("app"));
+
+
+// Functional Components
+export function Welcome(props) {
+  return (
+    <div>
+        <h1>Hello, {props.name}</h1>
+        <h2>Welcome to our OpenFin DAPP</h2>
+    </div>
+  );
+}
+
+export const Hello = (props) => { return <title>Hi {props.name}.</title>; };
+
+

@@ -1,3 +1,12 @@
-body {
-    line-height: 2;
+section {
+    line-height: 5;
+}
+
+aside {
+    font: 45px arial;
+    
+}
+
+.flex-container {
+  display: flex;
 }
