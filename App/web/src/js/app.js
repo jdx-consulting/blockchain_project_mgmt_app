@@ -1,16 +1,14 @@
 import React from "react";
+import { Header } from "./layout/header";
+import { Main } from "./layout/main";
 
+export const App = () => (
+  <div>
+    <Header />
+    <Main />
+  </div>
+)
 
-// Functional Components
-export function Welcome(props) {
-  return (
-    <div>
-        <h1>Hello, {props.name}</h1>
-        <h2>Welcome to our OpenFin DAPP</h2>
-    </div>
-  );
-}
-
-export const Hello = (props) => { return <title>Hi {props.name}.</title>; };
+export const AppTitle = (props) => { return <title>{props.title}.</title>; };
 
 

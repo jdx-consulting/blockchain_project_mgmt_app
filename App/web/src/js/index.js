@@ -1,11 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Welcome, Hello } from "./app";
-import { OpenFinVersion } from "./layout/footer";
+import { App, AppTitle } from "./app";
+// import { OpenFinVersion } from "./layout/footer";
 import style from "../main.css";
+import { HashRouter } from 'react-router-dom'
+
+ReactDOM.render((
+  <HashRouter>
+    <App />
+  </HashRouter>
+), document.getElementById('root'));
+
+ReactDOM.render(
+    <AppTitle title="JDX Time Management" />,
+    document.getElementById('theTitle')
+  );
 
 console.log('In Index.js');
 
+/*
 const PopUp = () => {
     
 
@@ -65,17 +78,14 @@ else {
             );
 }
 
-ReactDOM.render(
-  <Hello name="Matt" />,
-  document.getElementById('theTitle')
-);
+
 
 ReactDOM.render(
-  <Welcome name="Matthew" />,
+  <LoggedInUser name="Matthew" />,
   document.getElementById('app')
 );
 
-
+*/
 
 
 console.log('Out Index.js');

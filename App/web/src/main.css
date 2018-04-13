@@ -1,12 +1,18 @@
 section {
-    line-height: 5;
+    
 }
 
 aside {
-    font: 45px arial;
+    
     
 }
 
 .flex-container {
   display: flex;
+}
+
+/* Align Horizontally and Even Spacing */
+.flex-container-nav {
+  display: flex;
+  
 }
